@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>myFirstProject</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+    body {
+        background-color: #E6E6FA;
+    }
+    input {
+        width: 10%;
+    }
+    input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+</style>
+<body>
+<div>
+    <div class="container">
+        <form method="post" action="MYServlet">
+            <h1>Student Enrollment Signup Form</h1><br>
+            <strong> UserName: </strong><br>
+        <input class="control-label col-sm-2" type="text" placeholder="Enter UserName"  name="Username"required><br><br>
+            <strong> Password: </strong><br>
+            <input class="control-label col-sm-2" type="text" placeholder="Password" name="password"required><br><br>
+
+            <strong>  FirstName: </strong><br>
+            <input class="control-label col-sm-2" type="text" placeholder="FirstName" name="firstname"required><br><br>
+
+            <strong> LastName: </strong><br>
+            <input class="control-label col-sm-2" type="text" placeholder="LastName" name="lastname"required><br><br>
+
+            <strong> Date of Birth: </strong><br>
+            <input class="control-label col-sm-2" type="text" placeholder="Date of Birth" name="dob" required><br><br>
+
+           <strong> Email Address:</strong><br>
+            <input class="control-label col-sm-2" type="text" placeholder="Enter Email Address" name="email" required><br><br><br><br>
+
+
+            <input type="submit" name="save" value="Save"><br>
+    </form>
+        </div>
+</div>
+</body>
+</html>

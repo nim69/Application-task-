@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <servlet>
+        <servlet-name>MYServlet</servlet-name> <!-- Should be the name of your Servlet-->
+        <servlet-class>MYservlet</servlet-class> <!-- Should be the path of your Servlet-->
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>MYServlet</servlet-name> <!-- Should be the name of your Servlet which you have given inside servlet tag-->
+        <url-pattern>/MYServlet/*</url-pattern><!-- as desired but should be inside /../* -->
+    </servlet-mapping>
+</web-app>
